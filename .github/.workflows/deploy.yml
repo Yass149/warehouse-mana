@@ -1,0 +1,21 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DIGITALOCEAN_DROPLET_IP }}
+          username: ${{ secrets.DIGITALOCEAN_DROPLET_USERNAME }}
+          password: ${{ secrets.DIGITALOCEAN_DROPLET_PASSWORD }}
+          script: |
+            cd CI-CD-Workshop
+            ./scripts/deploy.sh
