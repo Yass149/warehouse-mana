@@ -29,10 +29,10 @@ To start using _DEPOT_,
 
 
 ## Contributions
-Niema Alaoui Mdaghri
-Yassine Malal
-Marwa Elazraq
-Meryam Khatib
+- Niema Alaoui Mdaghri
+- Yassine Malal
+- Marwa Elazraq
+- Meryam Khatib
 
 
 
