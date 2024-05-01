@@ -12,7 +12,7 @@ an open-source integrated management software (ERP) and customer relationship ma
 
 
 ## Getting Started 
-To start using Depot,
+To start using _DEPOT_,
 
 
 ## Acknowledgments
