@@ -1,1 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information visit:
+    // https://go.microsoft.com/fwlink/?linkid=830387
 
+    // Specifies the version of the launch configuration file
+    "version": "0.2.0",
+
+    // Defines configurations for launching Odoo
+    "configurations": [
+        {
+            // Configuration for launching Odoo
+            "name": "Odoo",
+            "type": "python", // Specifies the type of debugging session, here it's Python
+            "request": "launch", // Specifies that a launch is requested
+            "cwd": "${workspaceRoot}", // Specifies the current working directory
+            "program": "/usr/bin/odoo", // Specifies the program to debug
+            "python": "/usr/bin/python3", // Specifies the Python interpreter
+            "args": [ // Specifies the command-line arguments for the program
+                "--db_host=${env:DB_HOST}", // Specifies the database host using environment variables
+                "--db_port=${env:DB_PORT}", // Specifies the database port using environment variables
+                "--db_user=${env:DB_USER}", // Specifies the database user using environment variables
+                "--db_password=${env:DB_PASSWORD}", // Specifies the database password using environment variables
+                "--limit-time-real=100000" // Specifies additional arguments
+            ],
+            "console": "integratedTerminal" // Specifies the console to use for debugging
+        },
+        {
+            // Configuration for launching Odoo with debug log handler
+            "name": "Odoo log-handler debug",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "/usr/bin/odoo",
+            "python": "/usr/bin/python3",
+            "args": [
+                "--log-handler", ":DEBUG", // Specifies debug log handler
+                "--db_host=${env:DB_HOST}",
+                "--db_port=${env:DB_PORT}",
+                "--db_user=${env:DB_USER}",
+                "--db_password=${env:DB_PASSWORD}",
+                "--limit-time-real=100000"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
