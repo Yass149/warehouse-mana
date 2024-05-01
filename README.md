@@ -9,7 +9,9 @@
 ## About _DEPOT_
 _DEPOT_ is a desktop warehouse management program that is meant to be used by the municipality of Ifrane to track their inventory by being notified when and which items are low in supply. The app allows users  to amend the status of different items. When new merchandise arrives, they can add it to their inventory list with the appropriate quantity. The software will prompt the user to establish a quantity threshold for each item so that they are notified when it needs to be restocked.
 ## Technology Stack
-![image](https://github.com/Yass149/warehouse-mana/assets/165481332/48ff3803-7cf7-4a65-b231-72066bacaf5d)
+<p align="center">
+  <img src="https://github.com/Yass149/warehouse-mana/assets/165481332/48ff3803-7cf7-4a65-b231-72066bacaf5d"/>
+</p>
 
 
 _DEPOT_ is built on top of Odoo (formerly OpenERP):
