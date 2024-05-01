@@ -1,0 +1,29 @@
+version: '2'
+services:
+  web:
+    # Defines the service named 'web'
+    #volumes:
+      # Mounts the project folder to '/workspace'. While this file is in .devcontainer,
+      # mounts are relative to the first file in the list, which is a level up.
+      # - odoo-10-netiwan-web-modules:/mnt/odoo_modules
+      # - odoo-10-netiwan-web-config:/etc/odoo
+
+    # Defines environment variables for the 'web' service
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=odoo
+      - DB_PASSWORD=odoo
+
+    # Optional: Specifies additional capabilities required for ptrace-based debuggers like C++, Go, and Rust
+    #cap_add:
+    #  - SYS_PTRACE
+    #security_opt:
+    #  - seccomp:unconfined
+
+    # Overrides the default command to prevent shutting down after the process ends
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+#volumes:
+#  odoo-10-netiwan-web-modules:
+#  odoo-10-netiwan-web-config:

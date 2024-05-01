@@ -1,0 +1,38 @@
+version: '2'
+
+# Configuration for Docker services
+services:
+  # Configuration for the web service
+  web:
+    # Building the service using the Dockerfile located in the ./odoo-17 directory
+    build: ./odoo-17
+    # Specifying dependencies on other services
+    depends_on:
+      - db
+    # Exposing ports from the container to the host
+    ports:
+      - "10769:8069"  # Mapping container port 8069 to host port 10769
+    # Mounting volumes to persist data and configurations
+    volumes:
+      - odoo-17-web-data:/var/lib/odoo    # Mounting data volume for Odoo web files
+      - ./config:/etc/odoo                 # Mounting configuration volume for Odoo
+      - ./odoo_modules:/mnt/odoo_modules   # Mounting volume for additional Odoo modules
+
+  # Configuration for the db service
+  db:
+    # Using the official PostgreSQL 12 image from Docker Hub
+    image: postgres:12
+    # Setting environment variables for PostgreSQL database
+    environment:
+      - POSTGRES_DB=postgres   # Setting the name of the default database
+      - POSTGRES_PASSWORD=odoo  # Setting the password for the PostgreSQL user 'odoo'
+      - POSTGRES_USER=odoo     # Setting the username for PostgreSQL
+      - PGDATA=/var/lib/postgresql/data/pgdata  # Specifying the data directory
+    # Mounting volumes to persist PostgreSQL data
+    volumes:
+      - odoo-17-db-data:/var/lib/postgresql/data/pgdata  # Mounting data volume for PostgreSQL
+
+# Defining named volumes for persisting data
+volumes:
+  odoo-17-web-data:  # Volume for Odoo web data
+  odoo-17-db-data:   # Volume for PostgreSQL data
