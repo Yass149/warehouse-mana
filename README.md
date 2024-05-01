@@ -1,8 +1,9 @@
 # _DEPOT_  Warehouse Application
 
 
-<p align="center">
-  <img src="https://github.com/Yass149/warehouse-mana/assets/165490933/65037ff9-bc52-4dbc-8389-a39301b9fcf4"/>
+<p ali![depotlogo-removebg-preview](https://github.com/Yass149/warehouse-mana/assets/165490933/4e32ee36-f317-4806-8d70-bd2164c204fb)
+gn="center">
+
 </p>
 
   
