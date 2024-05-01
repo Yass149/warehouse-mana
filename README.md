@@ -1,10 +1,6 @@
 # _DEPOT_  Warehouse Application
-<br />
-<div align="center">
-  <a href=" https://github.com/Yass149/warehouse-mana">
-    <img src="![depotlogo](https://github.com/Yass149/warehouse-mana/assets/165490933/3425ac91-1c5f-4b7b-9abf-70539f58aecc")
- alt="Logo" width="80" height="80">
-  </a>
+![depotlogo](https://github.com/Yass149/warehouse-mana/assets/165490933/65037ff9-bc52-4dbc-8389-a39301b9fcf4)
+
   
 ## About _DEPOT_
 _DEPOT_ is a desktop warehouse management program that is meant to be used by the municipality of Ifrane to track their inventory by being notified when and which items are low in supply. The app allows users  to amend the status of different items. When new merchandise arrives, they can add it to their inventory list with the appropriate quantity. The software will prompt the user to establish a quantity threshold for each item so that they are notified when it needs to be restocked.
