@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- this is the id of this inherited view: viewid_inherit -->
+    <record id="product_template_form_view_inherit" model="ir.ui.view">
+    <!-- this is the name of this inherited view: modulename.viewname.inherit -->
+        <field name="name">product.template.inherit</field>
+        <!-- this is the model of the inherited view: modulename.viewname -->
+        <field name="model">product.template</field>
+        <!-- this is the reference of the inherited view: modulename.viewid -->
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <!-- here are the parts of the view to be changed -->
+        <field name="arch" type="xml">
+            <!-- here are the field of the view to be changed using xpath: //field[@name='name_of_the_field'] -->
+            <xpath expr="//field[@name='list_price']" position="attributes">
+                <!-- here are the new field attributes-->
+                <attribute name="invisible">True</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
