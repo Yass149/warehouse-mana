@@ -11,17 +11,17 @@ _DEPOT_ is built on top of Odoo (formerly OpenERP):
 an open-source integrated management software (ERP) and customer relationship management (CRM) tool, being the most widely used open-source ERP system by businesses. Odoo features an internal communication interface XML-RPC, a PostgreSQL database, and an interpreted Python language accessible via a web interface.
 
 
-#Getting Started 
+## Getting Started 
 To start using Depot,
 
 
-#Acknowledgments
+## Acknowledgments
 
 
 
 
 
-#Contributions
+## Contributions
 Niema Alaoui Mdaghri
 Yassine Malal
 Marwa Elazraq
