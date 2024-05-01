@@ -1,6 +1,9 @@
 # _DEPOT_  Warehouse Application
 
-![depotlogo-removebg-preview](https://github.com/Yass149/warehouse-mana/assets/165490933/9ad2348c-c372-430e-a957-ff5295022141)
+
+<p align="center">
+  <img src="https://github.com/Yass149/warehouse-mana/assets/165490933/9ad2348c-c372-430e-a957-ff5295022141" width="200" height="150" />
+</p>
 
   
 ## About _DEPOT_
