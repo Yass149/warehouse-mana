@@ -17,6 +17,49 @@ _DEPOT_ is a desktop warehouse management program that is meant to be used by th
 _DEPOT_ is built on top of Odoo (formerly OpenERP):
 an open-source integrated management software (ERP) and customer relationship management (CRM) tool, being the most widely used open-source ERP system by businesses. Odoo features an internal communication interface XML-RPC, a PostgreSQL database, and an interpreted Python language accessible via a web interface.
 
+## Features
+
+### User Management
+
+- **Account Management:**
+  - Login with personal information
+  - Option to stay logged in on trusted devices
+  - Logout functionality
+  - Reset password functionality
+  - View account details (email, phone, address)
+  - Change account details (name, password, address)
+  - Warning message before logout for unsaved changes
+  - Set access permissions for different users (view, edit, delete)
+
+### Inventory Management
+
+- **Item Management:**
+  - Create new inventory items
+  - Add/Deduct item quantity
+  - Modify item attributes
+
+- **Inventory Organization:**
+  - Customizable inventory categories
+
+- **Inventory Tracking:**
+  - Real-time inventory level updates
+  - Set threshold levels and receive alerts
+  - Low stock notifications
+  - Generate reports for specific items
+  - Barcode scanning support
+
+### Inventory Metrics
+
+- **Inventory Performance Dashboard:**
+  - Display key metrics for inventory management
+  - Track historical changes in metrics
+  - Export data into a document
+
+### Usability
+
+- Data validation and error tolerance
+- User-friendly interface with clear navigation
+- Error detection and correction during data upload
 
 ## Getting Started 
 To start using _DEPOT_,
