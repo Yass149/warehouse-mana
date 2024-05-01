@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- this is the id of this inherited view: viewid_inherit -->
-    <record id="product_template_form_view_inherit" model="ir.ui.view">
-    <!-- this is the name of this inherited view: modulename.viewname.inherit -->
-        <field name="name">product.template.inherit</field>
-        <!-- this is the model of the inherited view: modulename.viewname -->
-        <field name="model">product.template</field>
-        <!-- this is the reference of the inherited view: modulename.viewid -->
-        <field name="inherit_id" ref="product.product_template_form_view"/>
-        <!-- here are the parts of the view to be changed -->
-        <field name="arch" type="xml">
-            <!-- here are the field of the view to be changed using xpath: //field[@name='name_of_the_field'] -->
-            <xpath expr="//field[@name='list_price']" position="attributes">
-                <!-- here are the new field attributes-->
-                <attribute name="invisible">True</attribute>
-            </xpath>
-        </field>
-    </record>
+    <!-- Remove Menus -->
+    <data noupdate="1">
+        <!-- physical inventory Menu -->
+        <record id="stock.menu_action_inventory_tree" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- scrap Menu -->
+        <record id="stock.menu_stock_scrap" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- replenishment Menu -->
+        <record id="stock.menu_reordering_rules_replenish" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- run scheduler Menu -->
+        <record id="stock.menu_procurement_compute" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- product variants Menu -->
+        <record id="stock.product_product_menu" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- lots/serial numbers Menu -->
+        <record id="stock.menu_action_production_lot_form" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- locations Menu -->
+        <record id="stock.menu_valuation" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- moves analysis Menu -->
+        <record id="stock.stock_move_menu" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- performance Menu -->
+        <record id="stock_enterprise.stock_dashboard_menuitem" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- settings Menu -->
+        <record id="stock.menu_stock_general_settings" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- operations types Menu -->
+        <record id="stock.menu_pickingtype" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- record rules Menu -->
+        <record id="base.menu_action_rule" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <!-- barcode nomenclatures Menu -->
+        <record id="stock.menu_wms_barcode_nomenclature_all" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+    </data>
+
+    <!-- Remove Fields -->
 
 </odoo>
