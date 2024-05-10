@@ -61,15 +61,6 @@ an open-source integrated management software (ERP) and customer relationship ma
 - User-friendly interface with clear navigation
 - Error detection and correction during data upload
 
-## Getting Started 
-To start using _DEPOT_,
-
-
-## Acknowledgments
-
-
-
-
 
 ## Contributions
 - Niema Alaoui Mdaghri
